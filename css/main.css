@@ -1,0 +1,117 @@
+*{box-sizing: border-box;}
+.container-fluid{padding: 0;}
+body{
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.row,div[class*=col]{
+    margin: 0; padding: 0;
+}
+/* 스크롤 바 */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    height: 30%;
+    background: rgb(174, 172, 172); 
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.144); 
+}
+
+/* 임시 border */
+/* div{border: 1px solid #f3e7e7;} */
+
+/* main */
+.main img{object-fit: cover; height: 100%; width: 100%;}
+.carousel-indicators{bottom: 5rem;}
+.carousel-caption{bottom: 10rem;}
+.carousel-caption span{border-bottom: 1px solid white; cursor: pointer;transition: all 0.8s ease;}
+.carousel-caption span.ml{margin-right: 10px;}
+.carousel-caption span:hover{ color: rgba(0, 0, 0, 0.459);}
+
+#carouselExampleCaptions{background-color: rgb(0, 0, 0); padding: 0;}
+#carouselExampleCaptions img {object-fit: cover; width: 100%; height: 100%;}
+/* .carousel-inner{background-color: rgb(21, 0, 255); } */
+
+#head{
+    background-color: #0f0f0f; color: #f1f1f1;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+/* head logo */
+#head .logo{
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    color: #f1f1f1;
+    padding-left: 10px;
+    text-align: center;
+} 
+
+/* head Menu */
+.nav-item a{color: #f1f1f1; letter-spacing: 1.8px; text-align: center;font-size: 0.775rem;}
+.nav-item a:hover {opacity: 0.8;}
+.navbar-nav {display: flex; width: 100%; }
+.navbar-nav .nav-item {flex: 1; }
+.nav-item ul.dropdown-menu {left: -20px;}
+
+/* head login */
+.loginLink{cursor: pointer;transition: all 0.8s ease; font-size: 0.775rem; text-align: center; }
+.loginLink:last-child {text-align: left;}
+.loginLink:hover{opacity: 0.5;}
+.loginLink a,
+.logo > a {text-decoration-line: none; color: #f1f1f1;}
+
+/* body */
+.dropdown-menu{background-color: #0f0f0f;}
+.dropdown-menu li:hover a{text-align: bold; color: white; background-color: rgba(255, 255, 255, 0.154);}
+.nav-link:hover {color: rgba(255, 255, 255, 0.687);}
+.card-body{display: flex; align-items: center;}
+.card-body div .card-title{ padding-bottom: 2rem;}
+
+#rowBody{display: flex;flex-direction: column; justify-content: center;align-items: center;}
+
+/* list */
+/* .list .list_col {background-color: yellow;} */
+.list .list_col #innerList{height: 50%;}
+.list .list_col .card_col {display: flex; align-items: center; justify-content: center; }
+.list .list_col #innerList > div{display: flex;align-items: center; justify-content: center; height: 100%;width: 100%;}
+.card_end {padding-right: 0;}
+.list .card {border: none; cursor: pointer; margin: auto;}
+.list .card:hover{opacity: 0.8;}
+.list .card .title{padding-top: 10px;text-align: center;}
+.list .card .title p {font-size: 0.875rem;}
+.innerListBox {width: 100%;}
+/* footer */
+.footer{background-color: #cfcfcf11;display: flex;flex-direction: row; justify-content: center; padding: 30px 0; }
+.footer .row{color: rgba(89, 82, 82, 0.648); padding-top: 5px; cursor: pointer; transition: all 0.8s ease;}
+.footer .row:hover{color: black;}
+
+
+/* div{border:1px solid black;} */
+
+
+/* ---------- */
+/* 로그인 페이지 */
+#login {background-color: white;}
+#login .row {height: 100%; height: 100%;display: flex; align-items: center; margin: 0 5%;}
+#login .loginBox{display: flex;flex-direction: column; justify-content: space-around; align-items: center; }
+#login .loginBox > div {margin-bottom: 1.5%;}
+/* #login .row > div {background-color: #000; display: flex;flex-direction: row; justify-content: center;align-items: center; background-color: #f1f1f1;} */
+/* #login .row .loginBox{background-color: yellowgreen;} */
+/* #login .row .loginBox > div {} */
+#login .row input{width: 100%; height: 40px; border: gray; background-color: #7170700e; border-radius: 5px;}
+#login .row span {border-bottom: 1px solid #000; cursor: pointer; transition: all ease 0.8s;}
+#login .row span:hover {opacity: 0.8;}
+#login .row .loginBox > div p,
+#login .row input::placeholder {font-size: 0.875rem;}
